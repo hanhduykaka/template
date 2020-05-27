@@ -20,7 +20,7 @@ export class ShopComponent implements OnInit {
       name: "tung",
     },
   ];
-
+  isDisplay = false;
   constructor() {
   }
 

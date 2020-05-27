@@ -11,3 +11,20 @@
   let-count="count" [ngForTrackBy]="trackById">
   <div [class.odd]="odd" [class.first]="first" [class.last]="last">({{i + 1}})/({{count}}) {{hero.name}}</div>
 </ng-template>
+
+
+<ng-container *ngIf="isDisplay; then list1 else list2">
+
+</ng-container>
+
+<ng-template #list1>
+ <div>hanh1</div>
+</ng-template>
+<ng-template #list2>
+  <div>hanh3</div>
+ </ng-template>
+<hr>
+
+ <!-- Child is push into parent -->
+ <!-- Use ng-template g-container ngTemplateOutlet -->
+ <app-child></app-child>
